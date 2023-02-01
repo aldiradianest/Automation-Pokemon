@@ -18,9 +18,7 @@ class TestAutomate(unittest.TestCase):
         time.sleep(2)
         self.browser.find_element(By.XPATH,"/html/body/div[18]/div[2]/div/div/div[2]/div/div/button[2]").click()
         time.sleep(2)
-        # self.browser.find_element(By.XPATH,"/html/body/div[18]/div[2]/div/div/div[2]/div/div/button[2]").click()
-        # time.sleep(2)
-
+    
         actions = ActionChains(self.browser)
 
         pokedexLink = self.browser.find_element(By.XPATH, "/html/body/nav/div[2]/ul/li[2]/a")
@@ -72,14 +70,6 @@ class TestAutomate(unittest.TestCase):
             last_height = new_height
 
         time.sleep(5)
-
-
-
-        
-
-
-    
-
     
     def tearDown(self): 
         self.browser.close() 
